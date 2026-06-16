@@ -4,6 +4,7 @@ import { placeOrder } from "@/lib/trades";
 import { getEffectiveOrdersConfigForUser } from "@/lib/effective-orders-config";
 import { upsertScopedConfig } from "@/lib/scoped-config";
 
+
 function isIndianMarketOpen(): { open: boolean; message?: string } {
   const now = new Date();
   // IST = UTC+5:30
